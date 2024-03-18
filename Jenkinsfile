@@ -10,7 +10,7 @@ pipeline {
         stage('Invoke Python Script') {
             steps {
                 script {
-                    bash "python3 hello1.py "
+                    bat "python3 hello1.py "
                 }
             }
         }
