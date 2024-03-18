@@ -10,7 +10,7 @@ pipeline {
         stage('Invoke Python Script') {
             steps {
                 script {
-                    sh "python3 hello1.py "
+                    bash "python3 hello1.py "
                 }
             }
         }
