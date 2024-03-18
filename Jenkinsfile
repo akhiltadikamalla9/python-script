@@ -10,7 +10,7 @@ pipeline {
         stage('Invoke Python Script') {
             steps {
                 script {
-                    sh "python3 hello.py '${params.INPUT_PARAM}' '${params.INPUT_PARAM2}'"
+                    sh "python3 hello1.py "
                 }
             }
         }
