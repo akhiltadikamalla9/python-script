@@ -2,8 +2,8 @@ pipeline {
     agent any
     
     parameters {
-        string(name: 'INPUT_PARAM', defaultValue: 'default_value', description: 'Input parameter for Python script')
-        string(name: 'INPUT_PARAM2', defaultValue2: 'default_value2', description: 'Input parameter for Python script2')
+        string(name: 'INPUT_PARAM', defaultValue: '', description: 'Input parameter for Python script')
+        string(name: 'INPUT_PARAM2', defaultValue: '', description: 'Input parameter for Python script2')
     }
     
     stages {
