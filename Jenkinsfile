@@ -10,7 +10,7 @@ pipeline {
         stage('Invoke Python Script') {
             steps {
                 script {
-                    bat "python hellow.py '${params.dev_workspace_id}' '${params.test_workspace_id}'"
+                    bat "python hellow.py "
                 }
             }
         }
