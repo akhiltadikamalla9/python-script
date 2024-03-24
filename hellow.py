@@ -1,7 +1,5 @@
 import sys
 
 # Get the argument passed from Jenkins
-input_param = sys.argv[1]
-print(f"Received input: {input_param}")
-input_param2 = sys.argv[2]
-print(f"Received input: {input_param2}")
+param1_list = sys.argv[1].split(',')
+param2_list = sys.argv[2].split(',')
