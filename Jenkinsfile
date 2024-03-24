@@ -24,15 +24,8 @@ pipeline {
                     }
                     
                     // Call Python script and pass ArrayLists as command-line arguments
-                    def result = sh(script: "python my_script.py '${param1List.join(',')}' '${param2List.join(',')}'", returnStdout: true).trim()
+                    def result = sh(script: "python hellow.py '${param1List.join(',')}' '${param2List.join(',')}'", returnStdout: true).trim()
                     echo "Result from Python script: ${result}"
-                }
-            }
-        }
-        stage('Invoke Python Script') {
-            steps {
-                script {
-                    bat "python hellow.py "
                 }
             }
         }
