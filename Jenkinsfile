@@ -2,6 +2,7 @@ pipeline {
     agent any
     
     parameters {
+        choice(name: 'ENVIRONMENT', choices: ['dev', 'prod'], description: 'Select the environment: dev or prod')
         string(name: 'dev_workspace_id', defaultValue: '2a69087b-8a81-499c-b3c4-ac69d5795d00,eef6b44c-572a-4776-b050-ef089f968e73', description: 'Input parameter for Python script')
         string(name: 'test_workspace_id', defaultValue: 'ca199a86-1305-462f-8ae5-e4fc8f5268d7,86a33025-b2f0-49d7-b383-0c3fe25ea808', description: 'Input parameter for Python script2')
     }
